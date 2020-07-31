@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background-color: #797979;
+        }
+        .card{
+            width: 90%;
+            margin: auto !important;
+        }
+        .card-body{
+            background-color: #e4e4e4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card mx-xl-5">
+        <div class="card-body" >
+
+
+            <form action="/" method="post">
+                <p class="h1 text-center py-4">Send Email</p>
+                <label for="useremail" class="grey-text font-weight-light">Your Email</label>
+                <input type="email" name="useremail" id="useremail" class="form-control" required>
+
+                <br>
+                <label for="userpass" class="grey-text font-weight-light">Password </label>
+                <input type="password" name="userpass" id="userpass" class="form-control" required>
+                <br>
+                <label for="reciever" class="grey-text font-weight-light">To </label>
+
+                <input type="email" name="reciever" id="reciever" class="form-control" required>
+                <br>
+                <label for="cc" class="grey-text font-weight-light"> CC </label>
+                <input type="email" id="cc" name="cc" class="form-control">
+                <br>
+                <label for="bcc" class="grey-text font-weight-light"> BCC </label>
+                <input type="email" id="bcc" name="bcc" class="form-control">
+                <br>
+                <label for="subject" class="grey-text font-weight-light">Subject </label>
+                <input type="text" name="subject" id="subject" class="form-control" required>
+                <br>
+                <label for="textarea" class="grey-text font-weight-light"></label>
+                <textarea name="textarea" id="textarea" class="form-control" cols="30" rows="10" required></textarea>
+                <br>
+                <button type="submit" class="btn btn-dark btn-lg btn-block">Send your email</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
